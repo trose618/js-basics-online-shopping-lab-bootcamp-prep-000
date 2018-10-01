@@ -24,12 +24,15 @@ function viewCart() {
   if(cart.length===0){
     return 'Your shopping cart is empty.'
   }
-  let shoppingCart = "In your cart, you have "
+  let shoppingCart = "In your cart, you have"
   for(let i = 0; i < cart.length; i++){
     if(cart.length === 1){
-      return shoppingCart + `${cart[0].itemName} at ${cart[0].itemPrice}.`
+      return shoppingCart + ` ${cart[0].itemName} at ${cart[0].itemPrice}.`
     }else if(i===cart.length-1){
-      shoppingCart = shoppingCart + `and ${cart[i].itemName} at $${cart[i].itemPrice}.`
+      shoppingCart = shoppingCart + `, and ${cart[i].itemName} at $${cart[i].itemPrice}.`
+          return shoppingCart      
+    }else{
+      shoppingCart = shoppingCart + `, ${cart[i].itemName}`
     }
   }
 }
