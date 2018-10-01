@@ -63,3 +63,4 @@ function placeOrder(cardNumber) {
 
 console.log(addToCart("apples"))
 console.log(addToCart("grapes"))
+console.log(removeFromCart("peaches"))
