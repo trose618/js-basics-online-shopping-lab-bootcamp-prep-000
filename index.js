@@ -26,12 +26,12 @@ function viewCart() {
   }
   let shoppingCart = "In your cart, you have"
   for(let i = 0; i < cart.length; i++){
-    if(cart.length === 1){
+    if(cart.length === 1){//if 1 item
       return shoppingCart + ` ${cart[0].itemName} at $${cart[0].itemPrice}.`
-    }else if(i===cart.length-1){
+    }else if(i===cart.length-1){//if last item
       shoppingCart = shoppingCart + ` and ${cart[i].itemName} at $${cart[i].itemPrice}.`
           return shoppingCart      
-    }else{
+    }else{//if first or middle item in cart with 2+ items
       shoppingCart = shoppingCart + ` ${cart[i].itemName} at $${cart[i].itemPrice},`
     }
   }
