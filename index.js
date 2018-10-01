@@ -61,5 +61,5 @@ function placeOrder(cardNumber) {
   // write your code here
 }
 
-addToCart("apples")
-addToCart("grapes")
+console.log(addToCart("apples"))
+console.log(addToCart("grapes"))
