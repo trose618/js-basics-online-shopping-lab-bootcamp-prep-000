@@ -58,9 +58,7 @@ function removeFromCart(item) {
 
 function placeOrder(cardNumber) {
   // write your code here
+  if(cardNumber===null){
+    console.log("Sorry, we don't have a credit card on file for you.")
+  }
 }
-
-//console.log(addToCart("apples"))
-//console.log(addToCart("grapes"))
-//console.log(removeFromCart("peaches"))
-//console.log(removeFromCart("apples"))
