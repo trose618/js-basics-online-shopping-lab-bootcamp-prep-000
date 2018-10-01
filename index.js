@@ -51,9 +51,9 @@ function removeFromCart(item) {
   for(let i = 0; i < cart.length; i++){
     if(cart[i].itemName===item){
       delete cart[i]
+      return cart
     }
-    return cart
-  }
+  }return "That item is not in your cart."
 }
 
 function placeOrder(cardNumber) {
