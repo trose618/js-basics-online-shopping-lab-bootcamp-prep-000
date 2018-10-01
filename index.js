@@ -39,11 +39,11 @@ function viewCart() {
 
 function total() {
   // write your code here
-  total = 0
+  sum = 0
   for(let i = 0; i<cart.length;i++){
-    total += cart[i].itemPrice
+    sum += cart[i].itemPrice
   }
-  return total
+  return sum
 }
 
 function removeFromCart(item) {
