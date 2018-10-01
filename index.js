@@ -48,11 +48,13 @@ function total() {
 
 function removeFromCart(item) {
   // write your code here
+  updatedCart = []
   for(let i = 0; i < cart.length; i++){
     if(cart[i].itemName===item){
       delete cart[i]
     }
-    return cart
+    updatedCart = cart
+    return updatedCart
   }
 }
 
